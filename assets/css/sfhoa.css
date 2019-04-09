@@ -1,0 +1,540 @@
+/* Global */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    line-height: 1.5;
+}
+.page-wrapper {
+    background-color: #ebebeb;
+    min-height: 100%;
+    padding-bottom: 300px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .page-wrapper  {
+        padding-bottom: 190px;
+    }
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+h1.card-title {
+    font-size: 1.556rem;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 36px;
+}
+h1.form-title,
+h2.form-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+h3.aside-title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+.form-intro {
+    margin-bottom: 36px;
+}
+a,
+a:hover {
+    color: #0058a4;
+}
+.small {
+    margin-bottom: .5rem;
+}
+/* Body */
+.body-wrapper {
+    padding: 50px 0;
+}
+/* Header */
+.topbar {
+    width: 100%;
+    background: #113c66;
+    padding: 10px 0;
+}
+.text-hide__logo {
+    background-image: url('https://www.hennepin.us/assets/images/henn-wordmark.svg');
+    background-repeat: no-repeat; 
+    width: 268px; 
+    height: 50px;
+}
+/* Footer */
+
+footer {
+    background-color: #113c66;
+    height: 300px;
+    padding-top: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    footer {
+        height: 190px;
+    }
+}
+footer p,
+footer a {
+    color: #fff;
+    font-size: 16px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.henn-logo {
+    width: 55px;
+}
+
+/* Cards */
+.card {
+    border-radius: 0;
+}
+
+/* Button */
+.btn.btn-primary {
+    background-color: #113c66;
+    font-weight: 600;
+    border: solid 3px #113c66;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: .75px;
+    padding: 6px 38px;
+}
+.btn.btn.btn-primary:hover,
+.btn.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    background-color: transparent;
+    border: solid 3px #113c66;
+    color: #113c66;
+}
+.btn.btn-primary.inactive,
+.btn.btn.btn-primary.inactive:hover,
+.btn.btn.btn-primary.inactive:focus {
+    background-color: transparent;
+    border: solid 3px #5D5D5D;
+    color: #5d5d5d;
+    cursor: default;
+    outline: 0;
+    box-shadow: none;  
+}
+
+.btn-outline-primary {
+    background-color: #ffffff;
+    font-weight: 800;
+    color: #113c66;
+    border: solid 3px #113c66;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: .75px;
+    padding: 6px 38px;
+}
+
+.btn.btn.btn-outline-primary:hover,
+.btn.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary:active {
+    background-color: #113c66;
+    border: solid 3px #113c66;
+    color: #ffffff;
+}
+
+.back-button {
+    margin-left: 30px;
+}
+.next-button {
+    margin-right: 30px;
+}
+a.card-link.btn.btn-secondary {
+    background-color: transparent;
+    font-weight: 300;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: .75px;
+    padding: 18px 38px 0 0;
+    color: #5d5d5d;
+}
+a.card-link.btn.btn-secondary:hover,
+a.card-link.btn.btn-secondary:focus,
+a.card-link.btn.btn-secondary:active {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-decoration: underline;
+    color: #5d5d5d;
+}
+a.card-link.btn.btn-secondary:before {
+    display: inline-block;
+    content: "\003C";
+    padding-right: 5px;
+}
+.card-body {
+    padding: 3rem;
+}
+@media all and (max-width: 991px) {
+    .card-body {
+        padding-bottom: 0;
+    }
+    .row.page-buttons {
+        display: block;
+    }
+    .card-link.btn {
+        width: 100%;
+    }
+    .next-button.ml-auto,
+    .back-button.mr-auto {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    a.card-link.btn.btn-secondary {
+        padding: 18px 0 0 0;
+        margin-top: 50px;
+    }
+}
+/* pagination */
+.card-footer {
+    padding: 0;
+    background-color: #fff;
+    border-top: none;
+    padding: 0 30px;
+}
+.card-footer:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-top: solid 2px #dbdbdb;
+}
+.pagination-container {
+    position: relative;
+    padding: 20px 0 10px 0;
+}
+.pagination-list {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+.pagination-item{
+    position: absolute;
+    left: -80px;
+}
+.pagination-item:nth-child(2) { left: -50px; }
+.pagination-item:nth-child(3) { left: -20px; }
+.pagination-item:nth-child(4) { left: 10px; }
+.pagination-item:nth-child(5) { left: 40px; }
+.pagination-item:nth-child(6) { left: 70px; }
+.pagination-item:nth-child(7) { left: 100px; }
+
+.circle {
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;  
+  border: 2px solid #113c66;
+  border-radius: 100%;
+}
+.active {
+  background: #113c66;
+}
+.pagination-text {
+    font-size: 1rem;
+}
+.page-buttons {
+    margin-top: 50px;
+}
+
+/* Questions */
+.form-control {
+    border: 2px solid #a49e99;
+    border-radius: 0!important;
+}
+.question-1 .form-check-label,
+.question-2 .form-check-label,
+.question-5 .form-check-label {
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+.question .card-body {
+    padding-bottom: 1rem;
+}
+
+
+/* Question 1 */
+.question-1 {
+    margin-top: 70px;
+}
+.question-1 .page-buttons {
+    margin-top: 72px;
+}
+.question-1 .form-check {
+        margin: 0 32px;
+}
+@media all and (max-width: 991px) {
+    .form-check-inline {
+        display: block;
+    }
+}
+
+/* Question 2 */
+.question-2 .form-check-inline {
+    margin: 0 24px;
+}
+.question-2 .page-buttons {
+    margin-top: 16px;
+}
+
+/* Question 3 */
+.question-3 {
+    margin-top: 65px;
+}
+.question-3 .page-buttons {
+    margin-top: 65px;
+}
+.question-3 label {
+    width: 100%;
+    text-align: left;
+}
+.question-3 .form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+.question-3 .form-control {
+    margin-top: .5rem;
+    padding: .25rem .75rem;
+    font-size: 1.125rem;
+}
+
+/* Question 4 */
+.question-4 {
+    margin-top: 65px;
+}
+.question-4 .page-buttons {
+    margin-top: 65px;
+}
+.question-4 label {
+    width: 100%;
+    text-align: left;
+}
+.question-4 .form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+.question-4 .form-control {
+    margin-top: .5rem;
+    padding: .25rem .75rem;
+    font-size: 1.125rem;
+}
+.question-5 .page-buttons {
+    margin-top: 47px;
+}
+
+/* Question 5 */
+.question-5 {
+    margin-top: 58px;
+}
+.question-5 .card-title {
+    line-height: 1.5;
+}
+.question-5 .form-check-inline {
+    margin: 0 24px;
+}
+
+/* Question 6 */
+.question-6 .text-area {
+    margin-top: 32px;
+}
+.question-6 .text-area label {
+    width: 100%;
+    text-align: left !important;
+}
+.question-6 .page-buttons {
+    margin-top: 32px;
+}
+
+/* Question 7 */
+.question-7 label {
+    width: 100%;
+    text-align: left;
+}
+.question-7 .form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Personal info*/
+.personal-info-form .form-control {
+    height: calc(2.5rem + 2px);
+    padding: .25rem .75rem;
+    font-size: 1.125rem;
+}
+.personal-info-form label.text-hide {
+    display: block;
+    margin-top: 5px;
+}
+.personal-info-form .form-row>.col, 
+.personal-info-form .form-row>[class*=col-] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.personal-info-form .form-check {
+    margin-top: 3px;
+    padding-left: 0;
+}
+
+.red {
+    color: #ce1432;
+}
+
+/* Review page */
+.review-question {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+/* Radio buttons */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #a49e99;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #113c66;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Select input */
+
+/* not sure why this was added 
+.form-control {
+    width: 50%;
+    margin-left: 25%;
+}
+*/
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("/assets/images/angle-down.svg");
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+select,
+select.form-control.rounded-0 {
+    border-radius: 0!important;
+    border: 2px solid #a49e99;
+}
+
+/* Checkboxes */
+.form-check.custom-checkbox {
+    padding-left: 0;
+    text-align: left;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.custom-checkbox label {
+    position: relative;
+    display: inline-block;
+    padding-left: 32px;
+    font-size: 1.1125rem;
+}
+.custom-checkbox label::before,
+.custom-checkbox label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+.custom-checkbox label::before{
+    height: 22px;
+    width: 22px;
+    border: 1px solid #a49e99;
+    left: 0px;
+    top: 2px;
+}
+.custom-checkbox label::after {
+    height: 8px;
+    width: 15px;
+    border-left: 3px solid #212529;
+    border-bottom: 3px solid #212529;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 7px;
+}
+input[type="checkbox"] + label::after {
+    content: none;
+}
+input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+input[type="checkbox"]:focus + label::before {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(68, 200, 245, .75);
+}
+
+/* Focus states */
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #44C8F5;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(68, 200, 245, .75);
+}
+.btn-primary.focus, .btn-primary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(68, 200, 245, .75);  
+}

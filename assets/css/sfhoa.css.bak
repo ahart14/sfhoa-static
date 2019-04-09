@@ -1,0 +1,264 @@
+/* Global */
+
+body {
+    height: 100%;
+    line-height: 1.5;
+}
+.page-wrapper {
+    background-color: #ebebeb;
+    min-height: 100%;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+h1.card-title {
+    margin-top: 50px;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 36px;
+}
+h3.aside-title {
+    font-size: 26px;
+    font-weight: 500;
+}
+/* Body */
+.body-wrapper {
+    padding: 50px 0;
+}
+/* Header */
+.topbar {
+    width: 100%;
+    background: #113c66;
+    padding: 25px 0;
+}
+.text-hide__logo {
+    background-image: url('https://www.hennepin.us/assets/images/henn-wordmark.svg');
+    background-repeat: no-repeat; 
+    width: 268px; 
+    height: 50px;
+}
+/* Footer */
+
+footer {
+    background-color: #113c66;
+    height: 300px;
+    padding-top: 25px;
+}
+@media (min-width: 768px) {
+    footer {
+        height: 190px;
+    }
+}
+footer p,
+footer a {
+    color: #fff;
+    font-size: 16px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.henn-logo {
+    width: 55px;
+}
+
+/* Cards */
+.card {
+    border-radius: 0;
+}
+
+/* Button */
+.btn.btn-primary {
+    background-color: #113c66;
+    font-weight: 600;
+    border: solid 3px #113c66;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: .75px;
+    padding: 6px 38px;
+}
+.btn.btn.btn-primary:hover,
+.btn.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    background-color: transparent;
+    border: solid 3px #113c66;
+    color: #113c66;
+}
+.btn.btn-primary.inactive,
+.btn.btn.btn-primary.inactive:hover,
+.btn.btn.btn-primary.inactive:focus {
+    background-color: transparent;
+    border: solid 3px #5D5D5D;
+    color: #5d5d5d;
+}
+.back-button {
+    margin-left: 30px;
+}
+.next-button {
+    margin-right: 30px;
+}
+a.card-link.btn.btn-secondary {
+    background-color: transparent;
+    font-weight: 300;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: .75px;
+    padding: 18px 38px 0 0;
+    color: #5d5d5d;
+}
+a.card-link.btn.btn-secondary:before {
+    display: inline-block;
+    content: "\003C";
+    padding-right: 5px;
+}
+.card-body {
+    padding: 2rem;
+}
+@media all and (max-width: 991px) {
+    .card-body {
+        padding-bottom: 0;
+    }
+    .row.page-buttons {
+        display: block;
+    }
+    .card-link.btn {
+        width: 100%;
+    }
+    .next-button.ml-auto,
+    .back-button.mr-auto {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    a.card-link.btn.btn-secondary {
+        padding: 18px 0 0 0;
+        margin-top: 50px;
+    }
+}
+/* pagination */
+.card-footer {
+    padding: 0;
+    background-color: #fff;
+    border-top: none;
+    padding: 0 30px;
+}
+.card-footer:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-top: solid 2px #dbdbdb;
+}
+.pagination-container {
+    position: relative;
+    padding: 20px 0 10px 0;
+}
+.pagination-list {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+.pagination-item{
+    position: absolute;
+    left: -80px;
+}
+.pagination-item:nth-child(2) { left: -50px; }
+.pagination-item:nth-child(3) { left: -20px; }
+.pagination-item:nth-child(4) { left: 10px; }
+.pagination-item:nth-child(5) { left: 40px; }
+.pagination-item:nth-child(6) { left: 70px; }
+.pagination-item:nth-child(7) { left: 100px; }
+
+.circle {
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;  
+  border: 2px solid #113c66;
+  border-radius: 100%;
+}
+.active {
+  background: #113c66;
+}
+.pagination-text {
+    font-size: 1rem;
+}
+.page-buttons {
+    margin-top: 100px;
+}
+
+/* Questions */
+.form-check-label {
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+
+.question {
+
+}
+
+/* Question 1 */
+.question-1 {
+    margin-top: 100px;
+}
+.question-1 .form-check {
+        margin: 0 32px;
+}
+@media all and (max-width: 991px) {
+    .form-check-inline {
+        display: block;
+    }
+}
+
+/* Radio buttons */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #5d5d5d;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #113c66;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
